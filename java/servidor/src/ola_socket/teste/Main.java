@@ -38,11 +38,13 @@ public class Main {
 				//Aqui eu pego a conexao e faco alguma troca interessante. 
 				//Esperamos que o cliente envie uma string. Vamos devolver outra e fechar a conexao. 
 				try {
+					
 					PrintStream saida = new PrintStream(conexao.getOutputStream());
 					BufferedReader entrada = new BufferedReader(new InputStreamReader(conexao.getInputStream()));
 					String mensagemDoCliente = entrada.readLine();
 					System.out.println("Primeira Mensagem do Cliente: "+mensagemDoCliente);
-					saida.println("Eu sou o servidor e recebi sua mensagem, agora vou fechar a conexao. Adeus!");
+					saida.println("Eu sou o servidor em Java e recebi sua mensagem. "
+							+ "agora vou fechar a conexao. Adeus!");
 					conexao.close();
 					
 				} catch (IOException e) {
