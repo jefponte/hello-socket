@@ -1,2 +1,2 @@
-# ola_socket
-Example of socket connections between many program languages. 
+# hello-socket
+It's a example of socket connection with many languages. 
