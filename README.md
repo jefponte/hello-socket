@@ -1,2 +1,2 @@
 # ola_socket
-Como realizar conexão de socket em diversas linguagens. 
+Example of socket connections between many program languages. 
